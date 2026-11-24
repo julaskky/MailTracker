@@ -1,0 +1,370 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel transitmail search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN mailid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailid}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mailid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="mailid" data-fieldname="mailid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailid}">
+		{$label transitmail mailid }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailid}
+	</div>
+	<div class="r-search-field">
+		{$mailid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailid_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailid_fieldblock}
+											
+{BEGIN mtitle_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mtitle}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mtitle{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="mtitle" data-fieldname="mtitle" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mtitle}">
+		{$label transitmail mtitle }	</label>
+	<div class="r-search-option">
+		{$searchtype_mtitle}
+	</div>
+	<div class="r-search-field">
+		{$mtitle_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mtitle_editcontrol1}
+	</div>
+	
+</div>
+
+{END mtitle_fieldblock}
+											
+{BEGIN mailsource_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailsource}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mailsource{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="mailsource" data-fieldname="mailsource" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailsource}">
+		{$label transitmail mailsource }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailsource}
+	</div>
+	<div class="r-search-field">
+		{$mailsource_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailsource_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailsource_fieldblock}
+											
+{BEGIN maildestination_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_maildestination}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="maildestination{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="maildestination" data-fieldname="maildestination" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_maildestination}">
+		{$label transitmail maildestination }	</label>
+	<div class="r-search-option">
+		{$searchtype_maildestination}
+	</div>
+	<div class="r-search-field">
+		{$maildestination_editcontrol}	</div>
+	<div class="r-search-field">
+		{$maildestination_editcontrol1}
+	</div>
+	
+</div>
+
+{END maildestination_fieldblock}
+											
+{BEGIN currentoffice_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_currentoffice}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="currentoffice{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="currentoffice" data-fieldname="currentoffice" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_currentoffice}">
+		{$label transitmail currentoffice }	</label>
+	<div class="r-search-option">
+		{$searchtype_currentoffice}
+	</div>
+	<div class="r-search-field">
+		{$currentoffice_editcontrol}	</div>
+	<div class="r-search-field">
+		{$currentoffice_editcontrol1}
+	</div>
+	
+</div>
+
+{END currentoffice_fieldblock}
+											
+{BEGIN datereceived_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_datereceived}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="datereceived{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="datereceived" data-fieldname="datereceived" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_datereceived}">
+		{$label transitmail datereceived }	</label>
+	<div class="r-search-option">
+		{$searchtype_datereceived}
+	</div>
+	<div class="r-search-field">
+		{$datereceived_editcontrol}	</div>
+	<div class="r-search-field">
+		{$datereceived_editcontrol1}
+	</div>
+	
+</div>
+
+{END datereceived_fieldblock}
+											
+{BEGIN receivedby_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receivedby}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="receivedby{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="receivedby" data-fieldname="receivedby" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_receivedby}">
+		{$label transitmail receivedby }	</label>
+	<div class="r-search-option">
+		{$searchtype_receivedby}
+	</div>
+	<div class="r-search-field">
+		{$receivedby_editcontrol}	</div>
+	<div class="r-search-field">
+		{$receivedby_editcontrol1}
+	</div>
+	
+</div>
+
+{END receivedby_fieldblock}
+											
+{BEGIN dateleft_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dateleft}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dateleft{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="dateleft" data-fieldname="dateleft" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dateleft}">
+		{$label transitmail dateleft }	</label>
+	<div class="r-search-option">
+		{$searchtype_dateleft}
+	</div>
+	<div class="r-search-field">
+		{$dateleft_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dateleft_editcontrol1}
+	</div>
+	
+</div>
+
+{END dateleft_fieldblock}
+											
+{BEGIN nextoffice_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nextoffice}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="nextoffice{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="nextoffice" data-fieldname="nextoffice" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nextoffice}">
+		{$label transitmail nextoffice }	</label>
+	<div class="r-search-option">
+		{$searchtype_nextoffice}
+	</div>
+	<div class="r-search-field">
+		{$nextoffice_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nextoffice_editcontrol1}
+	</div>
+	
+</div>
+
+{END nextoffice_fieldblock}
+											
+{BEGIN sentby_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sentby}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sentby{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="sentby" data-fieldname="sentby" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sentby}">
+		{$label transitmail sentby }	</label>
+	<div class="r-search-option">
+		{$searchtype_sentby}
+	</div>
+	<div class="r-search-field">
+		{$sentby_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sentby_editcontrol1}
+	</div>
+	
+</div>
+
+{END sentby_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
